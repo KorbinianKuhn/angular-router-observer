@@ -1,2 +1,2 @@
-export { HttpObserverModule } from './src/http-observer.module';
-export { HttpObserverService } from './src/http-observer.service';
+export { RouterObserverModule } from './src/router-observer.module';
+export { RouterObserverService } from './src/router-observer.service';
