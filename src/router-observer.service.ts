@@ -41,7 +41,7 @@ export class RouterObserverService {
 
   private routingGroups: Array<RoutingGroupInterface> = [];
 
-  constructor( @Inject(ROUTER_OBSERVER_OPTIONS) config: any, private router: Router) {
+  constructor(@Inject(ROUTER_OBSERVER_OPTIONS) config: any, private router: Router) {
     const routingGroups = config.routingGroups ? JSON.parse(JSON.stringify(config.routingGroups)) : [];
 
     routingGroups.push({ name: 'default' });
@@ -160,6 +160,9 @@ export class RouterObserverService {
     if (group.routings.indexOf(routing) !== -1) {
       group.routings.splice(group.routings.indexOf(routing), 1);
       this.emitTimedOutRouting(group, routing);
+      if (group.routings.length === 0 && group.isPendingEventSent) {
+        this.emitFinished(group);
+      }
     }
   }
 
