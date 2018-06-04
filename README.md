@@ -2,7 +2,7 @@
 
 [![Dev Dependencies](routers://img.shields.io/david/dev/KorbinianKuhn/angular-router-observer.svg?style=flat-square)](routers://david-dm.org/KorbinianKuhn/angular-router-observer)
 [![npm](routers://img.shields.io/npm/dt/@korbiniankuhn/angular-router-observer.svg?style=flat-square)](routers://www.npmjs.com/package/@korbiniankuhn/angular-router-observer)
-[![npm-version](https://img.shields.io/npm/v/@korbiniankuhn/angular-router-observer.svg?style=flat-square)](https://www.npmjs.com/package/@korbiniankuhn/angular-router-observer)
+[![npm-version](https://img.shields.io/npm/v/@korbiniankuhn/angular-router-observer.svg?style=flat-square)](https://www.npmjs.com/package/@korbiniankuhn/angular-router-observer) [![Greenkeeper badge](https://badges.greenkeeper.io/KorbinianKuhn/angular-router-observer.svg)](https://greenkeeper.io/)
 ![license](https://img.shields.io/github/license/KorbinianKuhn/angular-router-observer.svg?style=flat-square)
 
 Small utility to track angular router events to get notified on completion and timeouts. Example use case is a loading bar that appears while routing is pending. Easy configurable debounce delay, routing timeout and url blacklisting or whitelisting.
