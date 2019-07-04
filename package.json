@@ -1,6 +1,6 @@
 {
   "name": "@korbiniankuhn/angular-router-observer",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "Track angular router events and get notified about completion and timeouts.",
   "main": "index.ts",
   "scripts": {
